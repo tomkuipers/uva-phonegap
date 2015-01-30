@@ -12,7 +12,7 @@
     <h2>Juicy Chuck Norris Facts</h2>
     <div class="jumbotron">
         <h1>
-            <strong>#{{vm.quote.id}}</strong> - {{ vm.quote.quote }}
+            <strong>#{{ vm.quote.id}}</strong> - {{ vm.quote.quote }}
         </h1>
         <button class="btn btn-primary btn-lg" ng-click="vm.newQuote()">New Random Quote</button>
     </div>
@@ -28,9 +28,13 @@
         <button class="btn btn-danger btn-lg" ng-click="second.newQuote()">New Random Quote</button>
     </div>
     <div class="alert-danger" ng-show="second.error">ER IS EEN FOUT OPGETREDEN!</div>
+    <!-- Hier PUSH-Notification code -->
+    <h2>Push Notification Area</h2>
+    <ul id="app-status-ul"></ul>
 </div>
 <!-- Vendor scripts -->
 <script src="bower_components/angular/angular.min.js"></script>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="cordova.js"></script>
 
 <!-- custom scripts. Deze later eventueel in een Gulp-buildflow verwerken  -->

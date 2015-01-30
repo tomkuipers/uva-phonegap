@@ -26,7 +26,8 @@
     this.randomQuote = function(){
       return $http({
         url   : myConstant.urlRandomQuote,
-        method: 'GET'
+        method: 'GET',
+        cache: false
       });
     };
 
